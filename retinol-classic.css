@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Komika Axis PL';
+    src: url('font/KomikaAxisPL.eot');
+    src: url('font/KomikaAxisPL.eot?#iefix') format('embedded-opentype'),
+        url('font/KomikaAxisPL.woff2') format('woff2'),
+        url('font/KomikaAxisPL.woff') format('woff'),
+        url('font/KomikaAxisPL.ttf') format('truetype'),
+        url('font/KomikaAxisPL.svg#KomikaAxisPL') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+		
+body {
+	background-color: #ffefb0;
+	color: #ffffff;
+	font-family: "Komika Axis PL";
+}
+
+h1,h3,th {
+	font-weight:200;
+}
+
+.retinol-page {
+	display: block;
+	margin: auto;
+	background-color: #ff7700;
+	opacity: 0.5;
+	width: 60%;
+	padding:0.5%;
+}
+
+p,h1,h3 {
+	text-align:center;
+}
+
+.gabim {
+	color:#ed003b;
+}
+
+.tokoferol {
+	padding: 2%;
+	background-color: #ffbf87;
+	border: 2px solid #ffa95e;
+	color: black;
+	overflow-x:scroll;
+}
+
+table {
+  margin-left:auto;
+  margin-right:auto;
+  border-collapse:collapse;
+  font-size:0.8em;
+  color: black;
+}
+
+a {
+	color:white;
+}
+
+table a {
+	color:black;
+}
+
+th {
+	color:#ed003b;
+}
+
+td,th {
+	border: 2px solid #ffa95e;
+	font-size:1.5em;
+	text-align:center;
+}
+
+@media only screen and (max-width: 1200px) {
+	td,th {
+		font-size:1.2em;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	td,th {
+		font-size:initial;
+	}
+	.retinol-page {
+		width: initial;
+	}
+	#retinol-molecule {
+		width:80%;
+	}
+}
+
+ul {
+	text-align:left;
+}
