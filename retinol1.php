@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-$ORG_NAME = "Koło Naukowe Towaroznawstwa CARGO"; # Nazwa organizacji - wyświetla na górze strony
-$ORG_PREFIX = "R-NoJ22-"; # Prefiks identyfikatorów kontuzji, widoczny w eksportach PDF
+$ORG_NAME = "nienazwanej firmy"; # Nazwa organizacji - wyświetla na górze strony
+$ORG_PREFIX = "R-"; # Prefiks identyfikatorów kontuzji, widoczny w eksportach PDF
 $TABLENAME = "retinol_injuries"; # Nazwa tabeli, w której przechowuje się kontuzje
-$USERCOND = $_SESSION["logged"]==1 && ($_SESSION["tag"]==0 || $_SESSION["tag"]==2 || $_SESSION["tag"]==3); # Kiedy spełnione, można przeglądać kontuzje
-$ADMINCOND = $_SESSION["logged"]==1 && ($_SESSION["tag"]==0 || $_SESSION["tag"]==3); # Kiedy spełnione, można przeglądać i edytować kontuzje
+$USERCOND = true; # Kiedy spełnione, można przeglądać kontuzje
+$ADMINCOND = true; # Kiedy spełnione, można przeglądać i edytować kontuzje
 
-$SQLservername = "mariadb106.server754863.nazwa.pl";
-$SQLusername = "server754863_slodkowlosy";
-$SQLpassword = "Cewniczek1!";
-$SQLdbname = "server754863_slodkowlosy";
+$SQLservername = "URL";
+$SQLusername = "username";
+$SQLpassword = "password";
+$SQLdbname = "database name";
 
 include("model.php");
 dbconfig($SQLservername, $SQLusername, $SQLpassword, $SQLdbname);
