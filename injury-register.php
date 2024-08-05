@@ -94,7 +94,7 @@ END;
 						$treatment = $row["treatment"];
 						echo "<tr><td><a href='injury.php?id=$injury_id'>$i.</a></td><td>$victim</td><td>$injury_date</td><td>$injury</td><td>$treatment</td><td>$end_date</td>";
 						$i++;
-						if($_SESSION["logged"]==1 && ($_SESSION["tag"]==0 || $_SESSION["tag"]==3))
+						if($ADMINCOND)
 							echo "<td><a href='injury-edit.php?id=$injury_id'>Edytuj</a></td>";
 						echo "</tr>";
 					}
